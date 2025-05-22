@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+
+
+        ::-webkit-scrollbar { 
+        width: 7px; 
+	
+        } 
+        ::-webkit-scrollbar-track { 
+        background:rgb(29, 30, 31);
+        border-radius:10px; 
+        } 
+        ::-webkit-scrollbar-thumb { 
+        background: rgb(29, 30, 31); 
+        border-radius:2.5px; 
+        height:25px; 
+        } 
+        ::-webkit-scrollbar-thumb:hover { 
+        background: black; 
+        } 
+        @font-face { 
+        font-family:CoolveticaRg-Regular; 
+        src:url('coolvetica rg.ttf'); 
+        } 
+
+
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:rgb(29, 30, 31);
+  }
+
+  table{ 
+
+  }
+
+  * {
+  box-sizing: border-box;
+  }
+
+  .container {
+  padding: 16px;
+  background-color: #460000;
+  border-radius:  3px;
+  }
+
+  input[type=text], input[type=password], input[type=email], input[type=zipcode] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius:  3px;
+  }
+
+  input[type=text]:focus, input[type=password], input[type=email], input[type=zipcode]:focus {
+  background-color: #ddd;
+  outline: none;
+  } 
+
+  hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+  }
+
+  .Login {
+  background-color: black;
+  color: white;
+  padding: 16px 20px;
+  margin: 5px 100px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  border-radius:  3px;
+  
+  }
+
+  .registerbtn:hover {
+  opacity: 1;
+  }
+
+  a {
+  color: dodgerblue;
+  }
+
+  .signup {
+  background-color: #380000;
+  text-align: center;
+  }
+
+.select{
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius:  3px;
+  }
+
+  </style>
+  <title></title>
+</head>
+<body>
+  <table align="center" width="480">
+    <tr>
+      <td>
+        <form action="main.html" target="1">
+          <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please sign up to create your account.</p>
+            <hr>
+<label id="formhead" for="userid"><b>Username:</b></label><br>
+              <input type="text" required="required" name="userid" placeholder="Username"><br>
+<label id="formhead" for="password"><b>Password:</b></label><br>
+              <input type="password" required="required" name="password" placeholder="Password"><br>
+<label id="formhead" for="email"><b>Email:</b></label><br>
+              <input type="email" required="required" name="email" placeholder="Sample.Gizmo@gmail.com"><br>
+            
+<br>
+              <select name="country" id="country" required class="select">
+                <option value="">
+                  Select Country
+                </option>
+                <option value="Ph">
+                  Philippines
+                </option>
+                <option value="Kr">
+                  Korea
+                </option>
+                <option value="Ch">
+                  China
+                </option>
+                <option value="Jp">
+                  Japan
+                </option>
+              </select>
+	      <select  name="country" id="country" required class="select">
+                <option value="">
+                  Select Province
+                </option>
+                <option value="Bohol">
+                  Bohol
+                </option>
+                <option value="Bicol">
+                  Bicol
+                </option>
+                <option value="Davao">
+                  Davao
+                </option>
+                <option value="IloIlo">
+                  IloIlo
+                </option>
+              </select><br>
+              <br>
+<label id="formhead" for="zipcode"><b>Zipcode:</b></label><br>
+              <input type="zipcode" required="required" name="zipcode" placeholder="1121">
+
+	<hr>
+</p><button type="submit" class="Login">Sign Up</button>
+          </div>
+          <div class="container signup">
+            <p>Login your account: <a href="login.html">Login</a>.</p>
+          </div>
+        </form>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
